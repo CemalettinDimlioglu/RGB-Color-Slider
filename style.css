@@ -19,3 +19,24 @@
      justify-content: center;
      box-shadow: 0 2em 3em rgba(0,0,0,0.2);
 }
+/* width: min(90%, 31.25em);: Bu kod, bir öğenin genişliğini belirler. min() fonksiyonu içinde iki değer bulunur. İlk değer, yüzde veya em birimiyle ifade edilen genişliğin maksimum değeridir. İkinci değer ise em birimiyle ifade edilen genişliğin sabit bir değeridir.
+Bu kod, öğenin genişliğini belirlerken iki kuralı takip eder:
+Eğer ekranın genişliği yüzde olarak ifade edilen değerin üzerindeyse, yüzde değerini kullanır. Örneğin, ekranda 1000 piksel genişliği varsa, 90% değeri 900 piksel olur.
+Eğer ekranın genişliği em birimi olarak ifade edilen değerin üzerindeyse, em değerini kullanır. Örneğin, ekranda 40em genişliği varsa, 31.25em değeri 31.25em olur.
+Böylece, öğenin genişliği ekranın genişliğine bağlı olarak 90% veya 31.25em değerinden daha küçük olan değeri alır. */
+  /* padding: 4em 2em;: Bu özellik, .container öğesinin iç kenar boşluğunu belirler. Yukarıdan ve aşağıdan 4em, soldan ve sağdan 2em iç kenar boşluğu uygulanır. */
+  /* position: absolute;: Bu özellik, .container öğesini mutlak bir konuma yerleştirir. Diğer öğelerle olan konumunu belirlemek için top, left, right ve bottom özellikleri kullanılabilir.
+transform: translate(-50%, -50%);: Bu özellik, .container öğesini dikey ve yatay yönde ortalamak için kullanılır. Öğenin yüzde 50'sini yukarıya ve sola kaydırarak ortalanmasını sağlar.
+top: 50%;: Bu özellik, .container öğesini dikey yönde ortalamak için kullanılır. Öğeyi üst kenarı ile belirtilen yüzdeye (burada 50%) yerleştirir.
+left: 50%;: Bu özellik, .container öğesini yatay yönde ortalamak için kullanılır. Öğeyi sol kenarı ile belirtilen yüzdeye (burada 50%) yerleştirir. */
+  /*
+display: grid;: Bu özellik, .container öğesini bir ızgara düzenine sahip bir konteyner olarak ayarlar.
+justify-content: center;: Bu özellik, .container öğesinin içeriğini yatay yönde (yatay eksende) ortalamak için kullanılır. */
+}
+
+
+
+
+
+
+
