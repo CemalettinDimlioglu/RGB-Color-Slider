@@ -3,6 +3,7 @@ const gColor = document.getElementById("green")
 const bColor = document.getElementById("blue")
 const copyBtn = document.getElementById("copy-btn")
 const result = document.querySelector(".result input")
+const sliders = document.querySelectorAll(".wrapper input[type='range']");
 
 
 let generateColor= ()=>{
@@ -17,4 +18,7 @@ let generateColor= ()=>{
 
 
 };
-generateColor();
+
+sliders.forEach((a)=>{
+     a.addEventListener("input", generateColor);
+})
