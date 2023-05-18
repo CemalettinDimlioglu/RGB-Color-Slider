@@ -3,9 +3,10 @@
      padding: 0;
      box-sizing: border-box;
      font-family: "poppins", sans-serif
+     
 }
 .container{
-     background-color: #ffffff;
+     background-color: #af7979;
      width: min(90%, 31.25em);
      padding: 4em 2em;
      position: absolute;
@@ -34,7 +35,27 @@ display: grid;: Bu özellik, .container öğesini bir ızgara düzenine sahip bi
 justify-content: center;: Bu özellik, .container öğesinin içeriğini yatay yönde (yatay eksende) ortalamak için kullanılır. */
 }
 
+.wrapper{
+     width: 100%;
+     display: flex;
+     align-items: space-between;
+     gap: 1em;
+     margin-bottom: 2.2em;
+}
+label{
+     font-size: 1.8em;
 
+}
+input[type="range"]{
+     width: 100%;
+
+}
+.result{
+     width: 100%;
+     display: grid;
+     grid-template-columns: 7fr 5fr;
+     gap: 1em;
+}
 
 
 
