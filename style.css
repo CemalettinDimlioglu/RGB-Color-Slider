@@ -1,26 +1,25 @@
-*{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     font-family: "poppins", sans-serif
-     
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-.container{
-     background-color: #af7979;
-     width: min(90%, 31.25em);
-     padding: 4em 2em;
-     position: absolute;
-     transform: translate(-50%,-50%);
-     top: 50%;
-     left: 50%;
-     color: #142b37;
-     font-weight: 600;
-     border-radius: 0.5em;
-     display: grid;
-     justify-content: center;
-     box-shadow: 0 2em 3em rgba(0,0,0,0.2);
-}
-/* width: min(90%, 31.25em);: Bu kod, bir öğenin genişliğini belirler. min() fonksiyonu içinde iki değer bulunur. İlk değer, yüzde veya em birimiyle ifade edilen genişliğin maksimum değeridir. İkinci değer ise em birimiyle ifade edilen genişliğin sabit bir değeridir.
+.container {
+  background-color: #FFFFFF;
+  width: min(90%, 31.25em);
+  padding: 4em 2em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: #142B37;
+  font-weight: 600;
+  border-radius: 0.5em;
+  display: grid;
+  justify-content: center;
+  box-shadow: 0 2em 3em rgba(0, 0, 0, 0.2);
+  background-color: red;
+  /* width: min(90%, 31.25em);: Bu kod, bir öğenin genişliğini belirler. min() fonksiyonu içinde iki değer bulunur. İlk değer, yüzde veya em birimiyle ifade edilen genişliğin maksimum değeridir. İkinci değer ise em birimiyle ifade edilen genişliğin sabit bir değeridir.
 Bu kod, öğenin genişliğini belirlerken iki kuralı takip eder:
 Eğer ekranın genişliği yüzde olarak ifade edilen değerin üzerindeyse, yüzde değerini kullanır. Örneğin, ekranda 1000 piksel genişliği varsa, 90% değeri 900 piksel olur.
 Eğer ekranın genişliği em birimi olarak ifade edilen değerin üzerindeyse, em değerini kullanır. Örneğin, ekranda 40em genişliği varsa, 31.25em değeri 31.25em olur.
@@ -34,28 +33,53 @@ left: 50%;: Bu özellik, .container öğesini yatay yönde ortalamak için kulla
 display: grid;: Bu özellik, .container öğesini bir ızgara düzenine sahip bir konteyner olarak ayarlar.
 justify-content: center;: Bu özellik, .container öğesinin içeriğini yatay yönde (yatay eksende) ortalamak için kullanılır. */
 }
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: space-between;
+  gap: 1em;
+  margin-bottom: 2.2em;
+}
+label {
+  font-size: 1.8em;
+}
+input[type="range"] {
+  width: 100%;
+}
+.result {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 1em;
+  /* width: 100%;: Bu özellik, .result öğesinin genişliğini %100 olarak ayarlar, yani öğe, içinde bulunduğu konteynerin tam genişliğini kaplar.
+display: grid;: Bu özellik, .result öğesini bir ızgara düzenine sahip bir konteyner olarak ayarlar.
+grid-template-columns: 7fr 5fr;: Bu özellik, ızgara düzenindeki sütunların genişliğini belirler. Burada 7fr, sütunun genişliğinin konteyner genişliğinin 7/12'si olduğunu ifade eder. 5fr ise sütunun genişliğinin konteyner genişliğinin 5/12'si olduğunu ifade eder. Toplamda sütunların genişliği konteyner genişliğine eşit olacaktır.
+gap: 1em;: Bu özellik, ızgara düzenindeki hücreler arasındaki boşluğu belirler. Burada hücreler arasındaki boşluk 1em olarak ayarlanır. */
+}
+input[type="text"],
+button {
+  font-size: 1em;
+  border-radius: 0.5em;
+  border: none;
+  outline: none;
+}
+input[type="text"] {
+  background-color: #EBEAEA;
+  padding: 1.2em 0.5em;
+  font-weight: 400;
+}
+input[type="text"]::selection {
+  /* background-color: blue; */
+  background-color: transparent;
+}
+button {
+  background-color: #0075FF;
+  color: #FFFFFF;
+  font-weight: 600;
+  cursor: pointer;
+}
 
-.wrapper{
-     width: 100%;
-     display: flex;
-     align-items: space-between;
-     gap: 1em;
-     margin-bottom: 2.2em;
-}
-label{
-     font-size: 1.8em;
 
-}
-input[type="range"]{
-     width: 100%;
-
-}
-.result{
-     width: 100%;
-     display: grid;
-     grid-template-columns: 7fr 5fr;
-     gap: 1em;
-}
 
 
 
