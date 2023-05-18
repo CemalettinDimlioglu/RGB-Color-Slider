@@ -22,3 +22,15 @@ let generateColor= ()=>{
 sliders.forEach((a)=>{
      a.addEventListener("input", generateColor);
 })
+window.addEventListener("load", generateColor);
+
+let copyColorCode = ()=>{
+     result.select ();
+     document.execCommand("copy");
+     copyBtn.innerText= "Copied!";
+     setTimeout(()=>{
+     
+           copyBtn.innerText="Copy Color Code";
+     },1000);
+};
+copyBtn.addEventListener("click", copyColorCode);
